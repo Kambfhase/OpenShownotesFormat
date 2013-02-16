@@ -99,10 +99,9 @@ function parse( osf){
         if( rest.trim() === ""){
             ret.valid = true;
         }
+        
+        // If there is anything after the tags, this line is invalid.
        
         return ret;
     });
 }
-
-
-parse("12:34 abc\n1234568990 def\n- abc <irc://j.hn/> #g #hash-tag #täg")
