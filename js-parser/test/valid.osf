@@ -1,0 +1,23 @@
+Diese Datei ist eine valide Open-Shownotes-Format-Datei.
+Insbesondere sind alle hierdrin enthaltenen Zeilen valide.
+Für negative Beispiele siehe invalid.osf.
+
+Zeile mit einfachem Text
+0123456789 Zeile mit UnixTimestamp
+0123456789 Zeile mit Unix Timestamp und einem Tag #tag
+Mehrere Tags #tag1 #tag2
+Ümläutö
+12:34 Zeitangabe
+35:67
+
+Wieder nur eine Zeile mit Text.
+- Einfache Einrückung
+- Noch eine Einrückung
+-- OMG, eine Ebene tiefer eingerückt!
+--- ZOMG! Wirst du denn wahnsinnig?
+- Jetzt bist du aber schon mutig, oder? #braveass
+- Langsam ist es auch nicht mehr lustig.
+-- Ja, ist gut jetzt!!111einself #boring #ring #ringring
+
+0123456789 		Mehr       Whitespace      für      alle!	#whitespace
+-	Noch mehr 												#tag
