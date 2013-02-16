@@ -47,7 +47,7 @@ function parse( osf){
         }
         
         // If the line contains characters besides the beginning, these have to be seperated by whitespace.
-        if( !rNBrWhitespace.test( rest[0])){
+        if( match && !rNBrWhitespace.test( rest[0])){
             ret.error = "Missing whitespace between beginning and the next token.";
             return ret;
         }
@@ -66,7 +66,7 @@ function parse( osf){
         }
         
         // If the line contains characters after the text, whitespace has to follow.
-        if( !rNBrWhitespace.test( match[0].substr(-1))){
+        if( match && !rNBrWhitespace.test( match[0].substr(-1))){
             ret.error = "Missing whitespace between the text and the next token.\n";
             return ret;
         }
@@ -85,7 +85,7 @@ function parse( osf){
         }
         
         // If the line contains characters after the link, whitespace has to follow.
-        if( !rNBrWhitespace.test( rest[0])){
+        if( match && !rNBrWhitespace.test( rest[0])){
             ret.error = "Missing whitespace between the link and the tags.\n";
             return ret;
         }
